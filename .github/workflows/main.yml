@@ -6,20 +6,11 @@ on:
       HEROKU_APP_NAME:
         description: 'Heroku App name'
         required: true
-      HEROKU_API_KEY:
-        description: 'Heroku API key'
-        required: true
-      HEROKU_EMAIL:
-        description: 'Heroku email address'
-        required: true
       BOT_TOKEN:
         description: 'Telegram bot token'
         required: true
       OWNER_ID:
         description: "Owner's telegram ID"
-        required: true
-      DATABASE_URL:
-        description: 'Database URL from MongoDB'
         required: true
       TELEGRAM_API:
         description: 'Telegram API ID from https://my.telegram.org/'
@@ -27,6 +18,9 @@ on:
       TELEGRAM_HASH:
         description: 'Telegram HASH from https://my.telegram.org/'
         required: true
+      SESSION:
+      description: ' your pyrogram session'
+      required: true
 jobs:
   deploy:
     runs-on: ubuntu-latest
